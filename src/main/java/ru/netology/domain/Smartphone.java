@@ -20,7 +20,8 @@ public class Smartphone extends Product {
         this.manufacture = manufacture;
     }
 
-
-
-
+    @Override
+    public boolean matches(String search) {
+        return super.matches(search) || manufacture.equals(search);
+    }
 }

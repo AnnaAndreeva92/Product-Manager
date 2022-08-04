@@ -15,4 +15,7 @@ public class Product {
     private String title;
     private int price;
 
+    public boolean matches(String search) {
+        return title.equals(search);
+    }
 }
